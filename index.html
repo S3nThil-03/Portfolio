@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Senthilkumar T, portfolio, Senthil, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Senthil's Portfolio.Aspiring Cloud Architect and MERN STACK Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Portfolio | Senthilkumar T</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Sk</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#my-learnings">MyLearnings</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm<span> Senthilkumar T</span></h2>
+    <p>i am  <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/senthilkumar-t-3593a728a" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/S3nThil-03" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="mailto:senthil73587@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"><i class="fab fa-Mail"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/senthil._03/profilecard/?igsh=MTRsdXh4cGdyOGk0"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpeg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Senthilkumar T</h3>
+        <span class="tag">Aspiring Cloud Architect</span>
+        
+        <p>
+          I am currently pursuing a Master's in Computer Applications at (KEC) Erode. <br>
+          I hold a Bachelor's degree in Computer Science from (EASC) Erode. <br>
+          I specialize in building web applications using the MERN stack. <br>
+          I have a keen interest in developing both web and mobile applications in Flutter."<br>
+          I Constantly learning and enhancing my skills in Cloud technologies. </p>
+        
+        <div class="box-container">
+            <div class="box">
+              <p><span> age: </span> 21</p>
+              <p><span> phone : </span> +91 98655 21555</p>
+            </div> 
+            <div class="box">
+              <p><span> email : </span> senthil73587@gmail.com</p>
+              <p><span> place : </span> Erode, Tamilnadu - 638004</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1itw2J5338SL1MXQK3lE0eLk8bcqvz-6u/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<style>
+  /* Main container styles */
+  .MyLearnings .container {
+      padding: 2rem;
+      width: 100%;
+  }
+  
+  /* Row styling for grid layout */
+  .row#my-learnings-certificate-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+  }
+  
+  /* Bar container styles */
+  .bar {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+  }
+  
+  /* Info container styles */
+  .info {
+      text-align: center;
+      position: relative;
+  }
+  
+  /* Image container and sizing */
+  .info img {
+      width: 100%; /* Make image responsive */
+      height: 200px; /* Fixed height */
+      object-fit: contain; /* Maintain aspect ratio */
+      cursor: pointer; /* Change cursor to pointer for interactivity */
+      transition: transform 0.4s ease; /* Smooth zoom effect */
+  }
+  
+  /* Full-screen overlay */
+  #fullscreenOverlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8); /* Dim background */
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  /* Full-screen image styling */
+  #fullscreenOverlay img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+  }
+  
+  /* Certificate title */
+  .info span {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 1200px) {
+      .row#my-learnings-certificate-container {
+          grid-template-columns: repeat(3, 1fr);
+      }
+      .info img {
+          height: 180px;
+      }
+  }
+  
+  @media (max-width: 992px) {
+      .row#my-learnings-certificate-container {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .info img {
+          height: 160px;
+      }
+  }
+  
+  @media (max-width: 576px) {
+      .row#my-learnings-certificate-container {
+          grid-template-columns: 1fr;
+      }
+      .info img {
+          height: 200px;
+      }
+  }
+  </style>
+  
+  <section class="MyLearnings" id="my-learnings">
+    <h2 class="heading">
+      <i class="fas fa-laptop-code"></i> My Learnings & <span>Certificates</span>
+    </h2>
+    <div class="container">
+      <div class="row" id="my-learnings-certificate-container">
+        <!-- AdobeXD Certificate -->
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/MyLearnings/IOT Certificate.jpg" alt="IOT Certificate" />
+            <span>IOT Certificate</span>
+          </div>
+        </div>
+        
+        <!-- Additional Certificate Examples -->
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/Design.jpg" alt="Web Development Certificate" />
+            <span>Web Development</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="./assets/images/nor.jpg" alt="JavaScript Certificate" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Fullscreen Overlay -->
+  <div id="fullscreenOverlay">
+    <img src="" alt="Fullscreen Certificate" />
+  </div>
+  
+  <script>
+    // JavaScript for Click-to-Zoom and Outer Click to Close
+    const images = document.querySelectorAll(".info img");
+    const overlay = document.getElementById("fullscreenOverlay");
+    const overlayImage = overlay.querySelector("img");
+  
+    // Show fullscreen image on click
+    images.forEach(image => {
+      image.addEventListener("click", () => {
+        overlay.style.display = "flex"; // Show the overlay
+        overlayImage.src = image.src; // Set clicked image as fullscreen
+      });
+    });
+  
+    // Close fullscreen image when clicking outside the image
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) {
+        overlay.style.display = "none"; // Hide the overlay
+      }
+    });
+  </script>
+  
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/college 1.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>Master of Computer Applications</h3>
+        <p>Kongu Engineering College | Erode</p>
+        <h4>2024-2026 | Pursuing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>Bachelor of Computer Science | 80.33%</h3>
+      <p>Erode Arts and Science College | Erode</p>
+      <h4>2021-2024 | Completed</h4>
+      </div>
+  </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>HSC | 79 %</h3>
+      <p>Kongu National Matric Hr Sec School | Erode</p>
+      <h4>2020-2021 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/calci.png" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Age Calculator</h3>
+        </div>
+        <div class="desc">
+          <p>Quickly calculate your age in years, months, and days—or even discover fun facts like your age in hours or seconds!</p>
+          <div class="btns">
+            <a href="https://github.com/S3nThil-03/MiniDevTools/tree/main/Age%20Calculator" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+</div>
+<div class="box-container">
+
+  <div class="box tilt">
+    <img draggable="false" src="./assets/images/projects/gits.png" alt="" />
+    <div class="content">
+      <div class="tag">
+      <h3>Github Profile Search </h3>
+      </div>
+      <div class="desc">
+        <p>A simple yet powerful tool to search and explore GitHub profiles with ease.</p>
+        <div class="btns">
+          <a href="https://github.com/S3nThil-03/MiniDevTools/tree/main/Github%20Profile%20Search" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+</div>
+<div class="viewall">
+  <a href="https://github.com/S3nThil-03/MiniDevTools" class="btn" target="_blank">
+    <span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+
+
+</section>
+<!-- work project section ends -->
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Senthil's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#my-learnings"><i class="fas fa-chevron-circle-right"></i>MyLearnings</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 98655 21555</p>
+          <p> <i class="fas fa-envelope"></i>senthil73587@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Erode, Tamilnadu - 638 004</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/senthilkumar-t-3593a728a " class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/S3nThil-03" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:senthil73587@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a class="instagram" aria-label="Instagram" href="https://www.instagram.com/senthil._03/profilecard/?igsh=MTRsdXh4cGdyOGk0"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/senthilkumar-t-3593a728a "> Senthil</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
